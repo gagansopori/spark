@@ -4,8 +4,7 @@
 # spark
 SPARK (Small Pi Array Running Kubernetes) is a small scale edge cluster I built with [Raspberry Pi](http://raspberrypi.com) 
 and [clusterHAT](https://clusterhat.com/). The entire cluster fits in my palm & looks something like this - 
-![](https://raw.githubusercontent.com/abhishekkrthakur/paris/main/images/spark.jpg). 
-
+![](https://raw.githubusercontent.com/abhishekkrthakur/paris/main/images/spark.jpg).
 
 ## Setup
 Splitting up the setup process into two steps - 
@@ -23,12 +22,12 @@ Splitting up the setup process into two steps -
    1. Controller Node:
       - Operating System: 64-bit Raspberry Pi OS Lite. This allows more room for K3s & etcd to run.
       - Cluster HAT Script: This script manages the GPIO pins to control power and ethernet for the Pi Zero W's.
-      - Kubernetes: Rancher K3s kubernetes (controller). It's more optimized for resource constrained edge devices. 
-      - Agent Nodes: 64-bit Raspberry Pi OS Lite + Python 3.11 for the microservices.
+      - Kubernetes: Rancher K3s kubernetes (controller). It's more optimized for resource constrained edge devices.
       - etcd: I used the embedded etcd packaged with K3s.
+      - Telemetry & Monitoring: I set up Prometheus & Grafana to monitor the cluster's performance and resource usage.
    2. Agent Nodes:
       - Operating System: 64-bit Raspberry Pi OS Lite. Minimal for headless pi's.
-      - Cluster HAT Script: This script manages the GPIO pins to control power and ethernet for the Pi Zero W's. 
+      - Cluster HAT Script: This script manages the GPIO pins to control power and ethernet on Pi Zero W's. 
       - Kubernetes: Rancher K3s (worker nodes). It works well for resource constrained Raspberry Pi Zero 2W.
       - Python Microservices: I deployed the 4 data-processing modules of my [news-bulletin](https://github.com/gagansopori/news-bulletin) project on the agent nodes. 
 
