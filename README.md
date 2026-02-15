@@ -3,12 +3,15 @@
 
 # spark
 
-SPARK (Small Pi Array Running Kubernetes) is a small scale edge cluster I built using [Raspberry Pi]() and the 
-[clusterHAT](https://clusterhat.com/). It features a Raspberry Pi 5 as the main node, the clusterHAT over GPIO, 
-4 Raspberry Pi Zero 2 W's are connected as agent nodes through the clusterHAT via the onboard USB slots. In addition to 
+SPARK (Small Pi Array Running Kubernetes) is a small scale edge cluster I built with [Raspberry Pi](http://raspberrypi.com) 
+and [clusterHAT](https://clusterhat.com/). The entire cluster fits in my palm & looks something like this - 
+![](https://raw.githubusercontent.com/abhishekkrthakur/paris/main/images/spark.jpg)
+
+
+It features a Raspberry Pi 5 as the main node, the clusterHAT over GPIO, 4 Raspberry 
+Pi Zero 2 W's are connected as agent nodes through the clusterHAT via the onboard USB slots. In addition to 
 this it has a 500GB NVMe as a boot & control-plane storage exposed over pi's PCIe x1 FPC.
 
-The entire cluster fits in my palm & looks something like this - ![](https://raw.githubusercontent.com/abhishekkrthakur/paris/main/images/spark.jpg)
 
 ## Vision & Inspiration
 I had been wanting to learn about kubernetes for a while, but I had been putting it off; procrastinating until very recently 
