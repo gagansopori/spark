@@ -4,7 +4,10 @@
 # spark
 SPARK (Small Pi Array Running Kubernetes) is a small scale edge cluster I built with [Raspberry Pi](http://raspberrypi.com) 
 and [clusterHAT](https://clusterhat.com/). The entire cluster fits in my palm & looks something like this - 
+<div style="text-align: center;">
 <a href="docs/front.png"><img src="docs/front.png" width="600" alt="SPARK cluster front view"></a>
+</div>
+
 ## Setup
 Splitting up the setup process into two steps - 
 1. **Hardware**
